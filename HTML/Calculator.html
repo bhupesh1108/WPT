@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function f1(){
+            let a=parseInt(document.getElementById("e1").value)
+            let b=parseInt(document.getElementById("e2").value)
+            let o=document.getElementById("op").value
+            let outputstr
+            switch(o){
+                case '+':outputstr=a+b;break;
+                case '-':outputstr=a-b;break;
+                case '/':outputstr=a/b;break;
+                case '*':outputstr=a*b;break;
+
+            }
+            let result=outputstr
+            document.getElementById("ot").innerHTML=result
+
+        }
+    </script>
+</head>
+<body>
+    <center>
+  Enter first number: <input type="number" id="e1"> 
+  <br>
+  Enter Second number: <input type="number" id="e2">
+  <br>
+  <select name="" id="op" onchange="f1()">
+    <option value="">select</option>
+    <option>+</option>
+    <option >-</option>
+    <option >/</option>
+    <option >*</option>
+  </select> 
+  <br>
+  <p>calculated value is <span id="ot"></span></p>
+  <br>
+  <!-- <a href="C:\Users\bhupe\Desktop\jaa\wpt\HTML\Calculator.html">refersh</a> -->
+</center>
+</body>
+</html>
