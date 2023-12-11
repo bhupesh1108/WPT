@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formValidation</title>
+    <script>
+        function f1(){
+            let name=document.getElementById("i1").value
+            let college=document.getElementById("i2").value
+            if(name.trim().length==0){
+                alert("invalid")
+            }
+            else{
+                let form= document.getElementById("form1")
+                form.submit();
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="C:\Users\bhupe\Desktop\jaa\wpt\WPT\currencyConverter.html" id="form1">
+        enter name:     <input type="text" id="i1" >
+        <br>
+        enter college:  <input type="text" minlength="3" maxlength="10" id="i2">
+        <br>
+        <input type="button" onclick="f1()" value="submit">
+    </form>
+</body>
+</html>
